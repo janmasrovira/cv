@@ -7,3 +7,5 @@
 *.lock
 *.agdai
 *.el
+/cv.pdf
+/.pdf-view-restore

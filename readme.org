@@ -1,0 +1,5 @@
+* Readme
+The latest version of the CV can be found here as a pdf:
+#+begin_center
+[[https://janmasrovira.github.io/cv/cv.pdf]]
+#+end_center

@@ -1,106 +1,199 @@
-\documentclass[a4paper,10pt]{article}
-
-\usepackage[margin=2.9cm]{geometry}
-\usepackage{xunicode,xltxtra,url,parskip}
-\usepackage[usenames,dvipsnames]{xcolor}
-
-\usepackage{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-
+\documentclass[11pt]{article}
+\usepackage[margin=1cm]{geometry}
+\usepackage{url}
+\usepackage{fontawesome5}
+\usepackage[x11names]{xcolor}
 \usepackage{titlesec}
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{3pt}{3pt}
+\usepackage[inline]{enumitem}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\hypersetup{colorlinks=true,urlcolor=RoyalBlue3,linkcolor=Salmon4,citecolor=Green4}
+\usepackage{footnote}
+
+\newcommand{\fnlink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
 
 \begin{document}
 
-\pagestyle{empty}
+\par{\centering{\Large Jan Mas Rovira}\bigskip\par}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 
-\font\fb=''[cmr10]''
+An always up-to-date version of this CV can be found in the following link:
+\begin{center}
+\url{https://gitlab.com/janmasrovira/cv/-/jobs/artifacts/master/raw/cv.pdf?job=tex2pdf}
+\end{center}
 
-\par{\centering{\huge CV - Jan Mas Rovira}\bigskip\par}
+\vspace{0.4cm}
 
-\section{Personal Data}
+\begin{center}
+    \hfill
+    \faPhone\ +34 634551201
+    \hfill
+    \faEnvelope\ \href{mailto:janmasrovira@gmail.com}{janmasrovira@gmail.com}
+    \hfill
+    \faGlobe\ \href{https://janmasrovira.gitlab.io/ascetic-slug/}{\texttt{janmasrovira.gitlab.io/ascetic-slug}}
+    \hspace*{\fill}
+    \\
+    \vspace{0.1cm}
 
-\begin{tabular}{rl}
-\textsc{Birth:} & 12th of January 1993, Vic, Catalonia.\\
-\textsc{Phone:} & +34 634551201\\
-\textsc{email:} & \href{mailto:janmasrovira@gmail.com}{janmasrovira@gmail.com}
-\end{tabular}
+    \hfill
+    \faMapMarker\ Spain
+    \hfill
+    \faGitlab\ \href{https://gitlab.com/janmasrovira}{\texttt{gitlab.com/janmasrovira}}
+    \hfill
+    \faGithub\ \href{https://github.com/janmasrovira}{\texttt{github.com/janmasrovira}}
+    \hspace*{\fill}
+\end{center}
+
+\section{Overview}
+
+I am a software developer with a Master's in Computer Science and a Master's in
+Mathematical Logic. My focus areas include compilers, functional programming,
+and more generally the intersection of mathematics and computer science.
+
+Currently, I am working on the Juvix compiler at Heliax. Juvix is a pure,
+strongly typed, functional programming language with a focus on safety. The Juvix compiler is implemented in Haskell.
+Previously, I worked as a Proof Engineer at Formal Vindications, where I applied
+formal verification and logical reasoning to formally verify software.
+
+I write about things I find interesting in my blog: \href{https://janmasrovira.gitlab.io/ascetic-slug/}{\texttt{janmasrovira.gitlab.io/ascetic-slug}}.
+
+\section{Professional History}
+
+\subsection*{[2021 - current] Heliax - Compiler Engineer and Language Designer}
+I've worked on designing the Juvix language and implementing its compiler in Haskell.
+The source code is publicly available at \href{https://github.com/anoma/juvix}{\texttt{github.com/anoma/juvix}}.
+
+I'd like to highlight some of my contributions to the compiler:
+\begin{itemize}
+  \item \textbf{Type checker}. I've implemented a type checker that supports
+        user defined ADTs, polymorphism, type inference and implicit arguments,
+        among other features.
+  \item \textbf{Termination checker}. I've implemented a termination checker based on
+        structural recursion. It detects decreasing lexicographic order of
+        arguments.
+  \item \textbf{Intermediate languages}. I've implemented transformations
+        involving intermediate languages. E.g.\ lambda lifting.
+  \item \textbf{Parallelization of the pipeline}. I've parallelized the pipeline so that
+        modules that don't depend on each other can be compiled in parallel.
+  \item \textbf{Parser}. I've implemented a parser using parser combinators. It keeps track of source location and supports custom infix operators. The complexity of the Juvix language is comparable to Haskell.
+  \item \textbf{Advanced Haskell types}. I strive to write elegant code that's
+        safe and easy to maitain. I've successfully used advanced types in
+        Haskell such as type families, GADT's, effects, singletons, etc.\ to
+        improve the overall quality of the codebase.
+\end{itemize}
+
+\subsection*{[2020 - 2021] Formal Vindications - Formal Methods Engineer}
+The aim of the company was to formally verify tachograph software. As part of
+that effort, I contributed to formally verifying a fully UTC compliant (with
+leap seconds) library in Rocq. The code is not publicly available.
+
+I also implemented a literate programming framework called \texttt{Datalang}
+which is used to specify and document algebraic data types. The framework
+includes a compiler to OCaml, Rocq, Json Schema, Html and LaTeX. See
+\href{https://gitlab.com/janmasrovira/datalang}{\texttt{gitlab.com/janmasrovira/datalang}}.
+
+\subsection*{[2014 - 2019] Afi informàtica - Full Stack Android Developer (part time)}
+I've used Java and Kotlin to write a custom application for a client. The
+application was being used by the employee's of the client's company to
+distribute and sell products to shops and supermarkets across Spain. The tasks
+performed included design and implementation of GUIs, interaction with server
+backed databases and overall knowledge of the Android system.
 
 \section{Academic History}
 
 \begin{tabular}{r|p{11cm}}
-\emph{Current} & \textsc{Master in Pure and Applied Logic} \\
-\textsc{September 2018} & \emph{University of Barcelona}\\
+  \textsc{October 2020} & \textsc{Master in Pure and Applied Logic, 90 ECTS} \\
+ & \emph{University of Barcelona}\\
+                        & \textbf{Best student award}\footnote{The best student award was given based on grades and quality
+                            of homework and projects. The award included a 1000€ bonus.} \\
 \multicolumn{2}{c}{} \\
 
-  \textsc{July 2018} & \textsc{Master in Innovation and Research in Informatics (Spec. Advanced Computing), 120 ECTS} \\
-               & \emph{Polytechnic University of Catalonia with an exchange period of 1 year (60 credits) at Chalmers University of Technology, Sweden.}\\
-  & Grade: \textbf{9.1/10} \\
+  \textsc{July 2018} & \textbf{Main (60 ECTS)} \\
+                        & \textsc{Master in Innovation and Research in Informatics (Spec. Advanced Computing)} \\
+                        & \emph{Polytechnic University of Catalonia} \\
+                         \\
+ & \textbf{Abroad (60 ECTS)}  \\
+  & \textsc{Master in Algorithms, Languages and Logic} \\
+                        & \emph{Chalmers University of Technology, Sweden} \\
+                        \\
+                        & \textbf{Overall (120 ECTS)}  \\
   \multicolumn{2}{c}{} \\
 
-  \textsc{July 2015} & \textsc{Bachelor's Degree in Informatics Engineering} \\
+  \textsc{July 2015} & \textsc{Bachelor's Degree in Informatics Engineering, 240 ECTS} \\
                & \emph{Polytechnic University of Catalonia}\\
-               & Grade: \textbf{8.12/10} \\
   \multicolumn{2}{c}{} \\
 \end{tabular}
 
-\section{Languages}
+\section{Master's theses}
 
-\begin{tabular}{rl}
-  \textsc{Catalan} & Native \\
-  \textsc{English} & Fluent \\
-  \textsc{English} & Fluent \\
-\end{tabular}
+\begin{description}
+\item[Nov 2020]
+\begin{minipage}{\textwidth}
 
-\newpage
-\section{Projects}
-\begin{tabular}{rp{12cm}}
-  \textsc{July 2018} & \textsc{Master's thesis}: Automatic Inductive Equational Reasoning \\
-                     & \textit{Report}: \url{https://gitlab.com/janmasrovira/master-thesis-doc/blob/master/final-report.pdf} \\
-                     & \textit{Source code}: \url{https://gitlab.com/janmasrovira/phileas} \\
-                     & \textit{Grade}: 9.5 \\
-                     & \textit{Description}: This projects presents Phileas, an automatic
-                       theorem prover capable of inductively proving equations on Haskell
-                       terms.
-  \\&The prover itself is implemented in Haskell.
-  \\&This project was supervised by Albert Rubio Gimeno. \\
-  \multicolumn{2}{c}{} \\
-  \textsc{September 2017} & \textsc{Collaboration with the CakeML project}. \\
-                     &\url{https://cakeml.org/} \\
-                     &\textit{Description}: CakeML is a formally verified compiler for a substatious subset of Standard ML. I collaborated with the CakeML team at Chalmers University
-                       under the supervision of Magnus Myreen in the efforts to optimize a compilation
-                       stage of the CakeML compiler.  \\
-  \multicolumn{2}{c}{} \\
-  \textsc{July 2017} & \textsc{Co-author of a research paper}. \\
-                     &\url{https://www.researchgate.net/publication/318200476_Jutgeorg_Characteristics_and_Experiences} \\
-                     &\textit{Description}: This paper explains the experiences of using an
-                       online judge developed and used in teaching at the Polytechnic University of
-                       Catalonia. My contribution was the implementation of a Haskell code analyzer that
-                       checks some constraints on the code that the students submit. \\
-  \multicolumn{2}{c}{} \\
+  \begin{tabular}{|p{12cm}}
 
-  \textsc{March 2017} & \textsc{An OCaml Backend for Agda}. \\
-                     &\url{https://gitlab.com/janmasrovira/agda2mlf} \\
-                     &\textit{Description}: Initial efforts to implement an OCaml backend for
-                       the Agda programming language. Development has been continued in
-                       the official Agda repository.
-                       \\&This project was done in conjunction with Frederik H. Iversen under
-                       the supervision of Ulf Norell at Chalmers University of Technology. \\
-  \multicolumn{2}{c}{} \\
+    \textsc{Title}: Generalized Veltman Semantics in Agda. \\
+    University of Barcelona. \\
+    \fnlink{https://gitlab.com/janmasrovira/masterlogic-thesis/-/jobs/artifacts/master/raw/report.pdf?job=tex2pdf}{Written report}. \\
+    \fnlink{https://gitlab.com/janmasrovira/interpretability-logics}{\texttt{Agda source code}}. \\
+    \fnlink{https://gitlab.com/janmasrovira/coq-interpretability-logics}{\texttt{Rocq source code}}. \\
+    \textit{Description}: This presents an Agda formalization of interpretability logics with a focus on generalized Veltman semantics.
+    \\All proofs have been formalized in the Agda proof assistant. A subset of them has also been formalized in Rocq.
+    \\This thesis was supervised by Joost J. Joosten.
 
-  \textsc{July 2015} & \textsc{Bachelor's thesis}: Automatic Static Analysis of Haskell Programs. \\
-  & \textit{Report}: (In Catalan) \url{https://upcommons.upc.edu/handle/2117/79657?locale-attribute=ca} \\
-  & \textit{Source code}: \url{https://gitlab.com/janmasrovira/haskal} \\
-  & \textit{Grade}: 8.8 \\
-  & \textit{Description}: This project presents the implementation of
-  an automatic Haskell code analyzer capable of transforming certain functions
-  into a tail-recursive function (under some assumptions).
-  Additionally, it can also find in some cases a strictly recursively-decreasing
-  arithmetical expression that proves termination. \\
-  & This project was supervised by Albert Rubio Gimeno.
+  \end{tabular}
+\end{minipage}
 
-\end{tabular}
+\item[July 2018]
+  \begin{minipage}{\textwidth}
+    \begin{tabular}{|p{12cm}}
+      \textsc{Title}: Automatic Inductive Equational Reasoning. \\
+      Polytechnic University of Catalonia. \\
+      \fnlink{https://gitlab.com/janmasrovira/master-thesis-doc/-/raw/master/final-report-2.pdf?inline=false}{Written report}. \\
+      \fnlink{https://gitlab.com/janmasrovira/phileas}{\texttt{Haskell source code}}. \\
+      \textit{Description}: This projects presents Phileas, an automatic
+      theorem prover capable of inductively proving equations on Haskell
+      terms.
+      \\The prover itself is implemented in Haskell.
+      \\This thesis was supervised by Albert Rubio Gimeno.
 
+    \end{tabular}
+  \end{minipage}
+
+\end{description}
+
+\section{Publications}
+\begin{description}
+\item[August 2020]
+  \begin{minipage}{\textwidth}
+    \begin{tabular}{|p{12cm}}
+      \textbf{Generalised Veltman semantics in Agda} \\
+      \emph{Advances in Modal Logic 2020, Helsinki (presented online)} \\
+      \textsc{Authors}: Jan Mas Rovira, Joost J. Joosten, Luka Mikec. \\
+      \fnlink{https://www2.helsinki.fi/sites/default/files/atoms/files/finalshortpapermain.pdf}{Collection of the short papers accepted by AiML 2020} \\
+    \end{tabular}
+  \end{minipage}
+
+\item[July 2020]
+  \begin{minipage}{\textwidth}
+    \begin{tabular}{|p{12cm}}
+      \textbf{An overview of Generalised Veltman Semantics} \\
+      \emph{Preprint} \\
+      \textsc{Authors}: Joost J. Joosten, Jan Mas Rovira, Luka Mikec, Mladen Vuković. \\
+      \textsc{ArXiv}: \href{https://arxiv.org/abs/2007.04722}{2007.04722} \\
+    \end{tabular}
+  \end{minipage}
+
+
+\item[July 2017]
+  \begin{minipage}{\textwidth}
+    \begin{tabular}{|p{12cm}}
+      \textbf{Jutge.org: Characteristics and experiences} \\
+      \emph{Transactions on Learning Technologies} \\
+      \textsc{Authors}: Jordi Petit (main author), Jan Mas Rovira, et al. \\
+      \textsc{DOI}: \href{https://doi.org/10.1109/TLT.2017.2723389}{10.1109/TLT.2017.2723389} \\
+    \end{tabular}
+  \end{minipage}
+
+\end{description}
 \end{document}
