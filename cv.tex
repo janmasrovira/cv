@@ -1,0 +1,106 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[margin=2.9cm]{geometry}
+\usepackage{xunicode,xltxtra,url,parskip}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\font\fb=''[cmr10]''
+
+\par{\centering{\huge CV - Jan Mas Rovira}\bigskip\par}
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Birth:} & 12th of January 1993, Vic, Catalonia.\\
+\textsc{Phone:} & +34 634551201\\
+\textsc{email:} & \href{mailto:janmasrovira@gmail.com}{janmasrovira@gmail.com}
+\end{tabular}
+
+\section{Academic History}
+
+\begin{tabular}{r|p{11cm}}
+\emph{Current} & \textsc{Master in Pure and Applied Logic} \\
+\textsc{September 2018} & \emph{University of Barcelona}\\
+\multicolumn{2}{c}{} \\
+
+  \textsc{July 2018} & \textsc{Master in Innovation and Research in Informatics (Spec. Advanced Computing), 120 ECTS} \\
+               & \emph{Polytechnic University of Catalonia with an exchange period of 1 year (60 credits) at Chalmers University of Technology, Sweden.}\\
+  & Grade: \textbf{9.1/10} \\
+  \multicolumn{2}{c}{} \\
+
+  \textsc{July 2015} & \textsc{Bachelor's Degree in Informatics Engineering} \\
+               & \emph{Polytechnic University of Catalonia}\\
+               & Grade: \textbf{8.12/10} \\
+  \multicolumn{2}{c}{} \\
+\end{tabular}
+
+\section{Languages}
+
+\begin{tabular}{rl}
+  \textsc{Catalan} & Native \\
+  \textsc{English} & Fluent \\
+  \textsc{English} & Fluent \\
+\end{tabular}
+
+\newpage
+\section{Projects}
+\begin{tabular}{rp{12cm}}
+  \textsc{July 2018} & \textsc{Master's thesis}: Automatic Inductive Equational Reasoning \\
+                     & \textit{Report}: \url{https://gitlab.com/janmasrovira/master-thesis-doc/blob/master/final-report.pdf} \\
+                     & \textit{Source code}: \url{https://gitlab.com/janmasrovira/phileas} \\
+                     & \textit{Grade}: 9.5 \\
+                     & \textit{Description}: This projects presents Phileas, an automatic
+                       theorem prover capable of inductively proving equations on Haskell
+                       terms.
+  \\&The prover itself is implemented in Haskell.
+  \\&This project was supervised by Albert Rubio Gimeno. \\
+  \multicolumn{2}{c}{} \\
+  \textsc{September 2017} & \textsc{Collaboration with the CakeML project}. \\
+                     &\url{https://cakeml.org/} \\
+                     &\textit{Description}: CakeML is a formally verified compiler for a substatious subset of Standard ML. I collaborated with the CakeML team at Chalmers University
+                       under the supervision of Magnus Myreen in the efforts to optimize a compilation
+                       stage of the CakeML compiler.  \\
+  \multicolumn{2}{c}{} \\
+  \textsc{July 2017} & \textsc{Co-author of a research paper}. \\
+                     &\url{https://www.researchgate.net/publication/318200476_Jutgeorg_Characteristics_and_Experiences} \\
+                     &\textit{Description}: This paper explains the experiences of using an
+                       online judge developed and used in teaching at the Polytechnic University of
+                       Catalonia. My contribution was the implementation of a Haskell code analyzer that
+                       checks some constraints on the code that the students submit. \\
+  \multicolumn{2}{c}{} \\
+
+  \textsc{March 2017} & \textsc{An OCaml Backend for Agda}. \\
+                     &\url{https://gitlab.com/janmasrovira/agda2mlf} \\
+                     &\textit{Description}: Initial efforts to implement an OCaml backend for
+                       the Agda programming language. Development has been continued in
+                       the official Agda repository.
+                       \\&This project was done in conjunction with Frederik H. Iversen under
+                       the supervision of Ulf Norell at Chalmers University of Technology. \\
+  \multicolumn{2}{c}{} \\
+
+  \textsc{July 2015} & \textsc{Bachelor's thesis}: Automatic Static Analysis of Haskell Programs. \\
+  & \textit{Report}: (In Catalan) \url{https://upcommons.upc.edu/handle/2117/79657?locale-attribute=ca} \\
+  & \textit{Source code}: \url{https://gitlab.com/janmasrovira/haskal} \\
+  & \textit{Grade}: 8.8 \\
+  & \textit{Description}: This project presents the implementation of
+  an automatic Haskell code analyzer capable of transforming certain functions
+  into a tail-recursive function (under some assumptions).
+  Additionally, it can also find in some cases a strictly recursively-decreasing
+  arithmetical expression that proves termination. \\
+  & This project was supervised by Albert Rubio Gimeno.
+
+\end{tabular}
+
+\end{document}

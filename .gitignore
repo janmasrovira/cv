@@ -1,0 +1,9 @@
+*.aux
+*.out
+*.log
+*.fls
+*.fdb_latexmk
+*.gz
+*.lock
+*.agdai
+*.el
