@@ -1,0 +1,14 @@
+stages:
+  - pdf
+
+tex2pdf:
+  stage: pdf
+  image: janmasrovira/texlive:2021-custom
+  only:
+    - master
+  script:
+    - latexmk -pdf report
+  artifacts:
+    paths:
+    - cv.pdf
+    expire_in: 1 month
