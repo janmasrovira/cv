@@ -7,7 +7,7 @@ tex2pdf:
   only:
     - master
   script:
-    - latexmk -pdf report
+    - latexmk -pdf cv
   artifacts:
     paths:
     - cv.pdf
