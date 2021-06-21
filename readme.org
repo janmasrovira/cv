@@ -1,3 +1,5 @@
 * Readme
-  The latest version of the CV can be found
-  [[[[https://gitlab.com/janmasrovira/cv/-/jobs/artifacts/master/raw/cv.pdf?job=tex2pdf]]][here]].
+  The latest version of the CV can be found here:
+  #+begin_center
+  [[https://gitlab.com/janmasrovira/cv/-/jobs/artifacts/master/raw/cv.pdf?job=tex2pdf]]
+  #+end_center
