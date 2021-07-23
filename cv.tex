@@ -1,25 +1,18 @@
-\documentclass[a4paper,11pt]{article}
-
-\usepackage[margin=2.9cm]{geometry}
-\usepackage{xunicode,xltxtra,url,parskip}
-\usepackage[usenames,dvipsnames]{xcolor}
-
-\usepackage{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-
+\documentclass[11pt]{article}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{url}
+\usepackage[x11names]{xcolor}
 \usepackage{titlesec}
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=RoyalBlue4,linkcolor=Salmon4,citecolor=Green4}
 \newcommand{\fnlink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
 
 \begin{document}
 
-\pagestyle{empty}
-
-\font\fb=''[cmr10]''
-
 \par{\centering{\huge CV - Jan Mas Rovira}\bigskip\par}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 
 \section{Personal Data}
 
@@ -38,12 +31,20 @@
   \textsc{October 2020} & \textsc{Master in Pure and Applied Logic, 90 ECTS} \\
  & \emph{University of Barcelona}\\
    & Grade: \textbf{7.8/10} \\
-   & \textbf{Best student award} \\
+                        & \textbf{Best student award}\footnote{The best student award was given based on grades and quality
+                            of homework and projects. The award included a 1000€ bonus.} \\
 \multicolumn{2}{c}{} \\
 
-  \textsc{July 2018} & \textsc{Master in Innovation and Research in Informatics (Spec. Advanced Computing), 120 ECTS} \\
-               & \emph{Polytechnic University of Catalonia with an exchange period of 1 year (60 credits) at Chalmers University of Technology, Sweden.}\\
-  & Grade: \textbf{9.1/10} \\
+  \textsc{July 2018} & \textbf{Main (60 ECTS)} \\
+                        & \textsc{Master in Innovation and Research in Informatics (Spec. Advanced Computing)} \\
+                        & \emph{Polytechnic University of Catalonia} \\
+                         \\
+ & \textbf{Abroad (60 ECTS)}  \\
+  & \textsc{Master in Algorithms, Languages and Logic} \\
+                        & \emph{Chalmers University of Technology, Sweden} \\
+                        \\
+                        & \textbf{Overall (120 ECTS)}  \\
+                        & Grade: \textbf{9.1/10} \\
   \multicolumn{2}{c}{} \\
 
   \textsc{July 2015} & \textsc{Bachelor's Degree in Informatics Engineering, 240 ECTS} \\
@@ -55,8 +56,11 @@
 \section{Professional History}
 \vspace{0.2cm}
 \begin{tabular}{r|p{11cm}}
-  \textsc{since May 2020} & \textsc{Haskell and Coq developer} \\
-  \textsc{current} & \emph{Formal Vindications S.L.} \\
+  \textsc{current} & \textsc{Haskell and Coq developer} \\
+  \textsc{since May 2020} & \emph{Formal Vindications S.L.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{to 2020} & \textsc{Android developer (part time)} \\
+  \textsc{from 2014} & \emph{Afi informàtica} \\
   \multicolumn{2}{c}{} \\
 
 \end{tabular}
@@ -70,7 +74,6 @@
 \end{tabular}
 
 
-\newpage
 \section{Master's theses}
 
 \begin{description}
