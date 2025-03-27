@@ -3,8 +3,10 @@
 \usepackage{url}
 \usepackage[x11names]{xcolor}
 \usepackage{titlesec}
+\usepackage[inline]{enumitem}
 \usepackage{hyperref}
-\hypersetup{colorlinks=true,urlcolor=RoyalBlue4,linkcolor=Salmon4,citecolor=Green4}
+\usepackage{cleveref}
+\hypersetup{colorlinks=true,urlcolor=RoyalBlue3,linkcolor=Salmon4,citecolor=Green4}
 \newcommand{\fnlink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
 \usepackage{footnote}
 \makesavenoteenv{tabular}
@@ -26,10 +28,27 @@ An always up-to-date version of this CV can be found in the following link:
 \textsc{Citizenship:} & Spanish.\\
 \textsc{Phone:} & +34 634551201\\
 \textsc{Email:} & \href{mailto:janmasrovira@gmail.com}{janmasrovira@gmail.com} \\
-\textsc{Working time zone:} & Central European (Summer) Time.  \\
+\textsc{Working time zone:} & Central European Time.  \\
 \textsc{Personal blog:} & \href{https://janmasrovira.gitlab.io/ascetic-slug/}{\texttt{janmasrovira.gitlab.io/ascetic-slug}} \\
 \textsc{Gitlab page:} & \href{https://gitlab.com/janmasrovira}{\texttt{gitlab.com/janmasrovira}} \\
-\textsc{Languages:} & English, Catalan, Spanish.
+\textsc{Github page:} & \href{https://github.com/janmasrovira}{\texttt{github.com/janmasrovira}} \\
+\end{tabular}
+
+\section{Professional History}
+\vspace{0.2cm}
+\begin{tabular}{r|p{11cm}}
+  \textsc{current} & \textsc{Compiler engineer and language designer} \\
+  \textsc{since December 2021} & \href{https://heliax.dev/}{\emph{Heliax}} \\
+   & See~\cref{role:heliax} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{to December 2021} & \textsc{Haskell and Rocq (Coq) developer} \\
+  \textsc{from May 2020} & \href{https://formalv.com/}{\emph{Formal Vindications S.L.}} \\
+   & See~\cref{role:fv} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{to 2019} & \textsc{Full Stack Android developer} (part time) \\
+  \textsc{from 2014} & \emph{Afi informàtica} \\
+  \multicolumn{2}{c}{} \\
+
 \end{tabular}
 
 \section{Academic History}
@@ -58,18 +77,6 @@ An always up-to-date version of this CV can be found in the following link:
                & \emph{Polytechnic University of Catalonia}\\
                & Grade: \textbf{8.12/10} \\
   \multicolumn{2}{c}{} \\
-\end{tabular}
-
-\section{Professional History}
-\vspace{0.2cm}
-\begin{tabular}{r|p{11cm}}
-  \textsc{current} & \textsc{Haskell and Coq developer} \\
-  \textsc{since May 2020} & \emph{Formal Vindications S.L.} \\
-  \multicolumn{2}{c}{} \\
-  \textsc{to 2019} & \textsc{Full Stack Android developer (part time)} \\
-  \textsc{from 2014} & \emph{Afi informàtica} \\
-  \multicolumn{2}{c}{} \\
-
 \end{tabular}
 
 \section{Master's theses}
@@ -147,4 +154,24 @@ An always up-to-date version of this CV can be found in the following link:
 
 \end{description}
 
+\section{Roles}
+\subsection{Heliax\label{role:heliax}}
+I've worked on designing the Juvix language and implementing its compiler in Haskell.
+The source code is publicly available at \href{https://github.com/anoma/juvix}{\texttt{github.com/anoma/juvix}}.
+
+I've lead the implementation effort on these parts of the compiler:
+\begin{enumerate*}
+  \item Parser;
+  \item Scoper;
+  \item Type checker;
+  \item Termination checker;
+  \item Pretty printer and formatter;
+  \item Compilation to Nock;
+  \item Overall architecture of the codebase;
+\end{enumerate*}
+etc.
+
+\subsection{Formal Vindications}\label{role:fv}
+I've worked on formally verifying a fully UTC compliant (with leap seconds)
+library in Rocq. The code is not publicly available.
 \end{document}
