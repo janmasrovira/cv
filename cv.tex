@@ -8,13 +8,13 @@
 \usepackage{hyperref}
 \usepackage{cleveref}
 \hypersetup{colorlinks=true,urlcolor=RoyalBlue3,linkcolor=Salmon4,citecolor=Green4}
-\newcommand{\fnlink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
 \usepackage{footnote}
-\makesavenoteenv{tabular}
+
+\newcommand{\fnlink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
 
 \begin{document}
 
-\par{\centering{\huge CV - Jan Mas Rovira}\bigskip\par}
+\par{\centering{\Large Jan Mas Rovira}\bigskip\par}
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 
 An always up-to-date version of this CV can be found in the following link:
@@ -34,6 +34,9 @@ An always up-to-date version of this CV can be found in the following link:
     \hspace*{\fill}
     \\
     \vspace{0.1cm}
+
+    \hfill
+    \faMapMarker\ Spain
     \hfill
     \faGitlab\ \href{https://gitlab.com/janmasrovira}{\texttt{gitlab.com/janmasrovira}}
     \hfill
@@ -52,35 +55,55 @@ strongly typed, functional programming language with a focus on safety. The Juvi
 Previously, I worked as a Proof Engineer at Formal Vindications, where I applied
 formal verification and logical reasoning to formally verify software.
 
+I write about things I find interesting in my blog: \href{https://janmasrovira.gitlab.io/ascetic-slug/}{\texttt{janmasrovira.gitlab.io/ascetic-slug}}.
+
 \section{Professional History}
-\begin{tabular}{@{}p{3cm} p{6cm} r@{}}
-    \textit{YYYY – YYYY} & \textbf{Proof Engineer} & Formal Vindications \\
-    \textit{YYYY – Present} & \textbf{Compiler Engineer} & Heliax (Juvix Team) \\
-\end{tabular}
 
-\subsection*{(2021 - current) Heliax - Compiler Engineer}
-\vspace{0.2cm}
-\begin{tabular}{r|p{11cm}}
-  \textsc{current} & \textsc{Compiler engineer and language designer} \\
-  \textsc{since December 2021} & \href{https://heliax.dev/}{\emph{Heliax}} \\
-   & See~\cref{role:heliax} \\
-  \multicolumn{2}{c}{} \\
-  \textsc{to December 2021} & \textsc{Haskell and Rocq (Coq) developer} \\
-  \textsc{from May 2020} & \href{https://formalv.com/}{\emph{Formal Vindications S.L.}} \\
-   & See~\cref{role:fv} \\
-  \multicolumn{2}{c}{} \\
-  \textsc{to 2019} & \textsc{Full Stack Android developer} (part time) \\
-  \textsc{from 2014} & \emph{Afi informàtica} \\
-  \multicolumn{2}{c}{} \\
+\subsection*{[2021 - current] Heliax - Compiler Engineer and Language Designer}
+I've worked on designing the Juvix language and implementing its compiler in Haskell.
+The source code is publicly available at \href{https://github.com/anoma/juvix}{\texttt{github.com/anoma/juvix}}.
 
-\end{tabular}
+I'd like to highlight some of my contributions to the compiler:
+\begin{itemize}
+  \item \textbf{Type checker}; I've implemented a type checker that supports
+        user defined ADTs, polymorphism, type inference and implicit arguments,
+        among other features.
+  \item \textbf{Termination checker}; I've implemented a termination checker based on
+        structural recursion. It detects decreasing lexicographic order of
+        arguments.
+  \item \textbf{Intermediate languages}; I've implemented transformations
+        involving intermediate languages. E.g.\ lambda lifting.
+  \item \textbf{Parallelization of the pipeline}. I've parallelized the pipeline so that
+        modules that don't depend on each other can be compiled in parallel.
+  \item \textbf{Parser}; I've implemented a parser using parser combinators. It keeps track of source location and supports custom infix operators. The complexity of the Juvix language is comparable to Haskell.
+  \item \textbf{Advanced Haskell types}. I strive to write elegant code that's
+        safe and easy to maitain. I've successfully used advanced types in
+        Haskell such as type families, GADT's, effects, singletons, etc.\ to
+        improve the overall quality of the codebase.
+\end{itemize}
+
+\subsection*{[2020 - 2021] Formal Vindications - Formal Methods Engineer}
+The aim of the company was to formally verify tachograph software. As part of
+that effort, I contributed to formally verifying a fully UTC compliant (with
+leap seconds) library in Rocq. The code is not publicly available.
+
+I also implemented a literate programming framework called \texttt{Datalang}
+which is used to specify and document algebraic data types. The framework
+includes a compiler to OCaml, Coq, Json Schema, Html and LaTeX. See
+\href{https://gitlab.com/janmasrovira/datalang}{\texttt{gitlab.com/janmasrovira/datalang}}.
+
+\subsection*{[2014 - 2019] Afi informàtica - Full Stack Android Developer (part time)}
+I've used Java and Kotlin to write a custom application for a client. The
+application was being used by the employee's of the client's company to
+distribute and sell products to shops and supermarkets across Spain. The tasks
+performed included design and implementation of GUIs, interaction with server
+backed databases and overall knowledge of the Android system.
 
 \section{Academic History}
 
 \begin{tabular}{r|p{11cm}}
   \textsc{October 2020} & \textsc{Master in Pure and Applied Logic, 90 ECTS} \\
  & \emph{University of Barcelona}\\
-   & Grade: \textbf{7.8/10} \\
                         & \textbf{Best student award}\footnote{The best student award was given based on grades and quality
                             of homework and projects. The award included a 1000€ bonus.} \\
 \multicolumn{2}{c}{} \\
@@ -94,12 +117,10 @@ formal verification and logical reasoning to formally verify software.
                         & \emph{Chalmers University of Technology, Sweden} \\
                         \\
                         & \textbf{Overall (120 ECTS)}  \\
-                        & Grade: \textbf{9.1/10} \\
   \multicolumn{2}{c}{} \\
 
   \textsc{July 2015} & \textsc{Bachelor's Degree in Informatics Engineering, 240 ECTS} \\
                & \emph{Polytechnic University of Catalonia}\\
-               & Grade: \textbf{8.12/10} \\
   \multicolumn{2}{c}{} \\
 \end{tabular}
 
@@ -116,7 +137,6 @@ formal verification and logical reasoning to formally verify software.
     \fnlink{https://gitlab.com/janmasrovira/masterlogic-thesis/-/jobs/artifacts/master/raw/report.pdf?job=tex2pdf}{Written report}. \\
     \fnlink{https://gitlab.com/janmasrovira/interpretability-logics}{\texttt{Agda source code}}. \\
     \fnlink{https://gitlab.com/janmasrovira/coq-interpretability-logics}{\texttt{Coq source code}}. \\
-    \textit{Grade}: 8.2 \\
     \textit{Description}: This presents an Agda formalization of interpretability logics with a focus on generalized Veltman semantics.
     \\All proofs have been formalized in the Agda proof assistant. A subset of them has also been formalized in Coq.
     \\This thesis was supervised by Joost J. Joosten.
@@ -131,7 +151,6 @@ formal verification and logical reasoning to formally verify software.
       Polytechnic University of Catalonia. \\
       \fnlink{https://gitlab.com/janmasrovira/master-thesis-doc/-/raw/master/final-report-2.pdf?inline=false}{Written report}. \\
       \fnlink{https://gitlab.com/janmasrovira/phileas}{\texttt{Haskell source code}}. \\
-      \textit{Grade}: 9.5 \\
       \textit{Description}: This projects presents Phileas, an automatic
       theorem prover capable of inductively proving equations on Haskell
       terms.
@@ -177,25 +196,4 @@ formal verification and logical reasoning to formally verify software.
   \end{minipage}
 
 \end{description}
-
-\section{Roles}
-\subsection{Heliax\label{role:heliax}}
-I've worked on designing the Juvix language and implementing its compiler in Haskell.
-The source code is publicly available at \href{https://github.com/anoma/juvix}{\texttt{github.com/anoma/juvix}}.
-
-I've lead the implementation effort on these parts of the compiler:
-\begin{enumerate*}
-  \item Parser;
-  \item Scoper;
-  \item Type checker;
-  \item Termination checker;
-  \item Pretty printer and formatter;
-  \item Compilation to Nock;
-  \item Overall architecture of the codebase;
-\end{enumerate*}
-and more.
-
-\subsection{Formal Vindications}\label{role:fv}
-I've worked on formally verifying a fully UTC compliant (with leap seconds)
-library in Rocq. The code is not publicly available.
 \end{document}
