@@ -3,7 +3,7 @@ stages:
 
 tex2pdf:
   stage: pdf
-  image: janmasrovira/texlive:2021-custom
+  image: texlive/texlive:TL2024-historic
   only:
     - master
   script:
