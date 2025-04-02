@@ -65,17 +65,17 @@ The source code is publicly available at \href{https://github.com/anoma/juvix}{\
 
 I'd like to highlight some of my contributions to the compiler:
 \begin{itemize}
-  \item \textbf{Type checker}; I've implemented a type checker that supports
+  \item \textbf{Type checker}. I've implemented a type checker that supports
         user defined ADTs, polymorphism, type inference and implicit arguments,
         among other features.
-  \item \textbf{Termination checker}; I've implemented a termination checker based on
+  \item \textbf{Termination checker}. I've implemented a termination checker based on
         structural recursion. It detects decreasing lexicographic order of
         arguments.
-  \item \textbf{Intermediate languages}; I've implemented transformations
+  \item \textbf{Intermediate languages}. I've implemented transformations
         involving intermediate languages. E.g.\ lambda lifting.
   \item \textbf{Parallelization of the pipeline}. I've parallelized the pipeline so that
         modules that don't depend on each other can be compiled in parallel.
-  \item \textbf{Parser}; I've implemented a parser using parser combinators. It keeps track of source location and supports custom infix operators. The complexity of the Juvix language is comparable to Haskell.
+  \item \textbf{Parser}. I've implemented a parser using parser combinators. It keeps track of source location and supports custom infix operators. The complexity of the Juvix language is comparable to Haskell.
   \item \textbf{Advanced Haskell types}. I strive to write elegant code that's
         safe and easy to maitain. I've successfully used advanced types in
         Haskell such as type families, GADT's, effects, singletons, etc.\ to
