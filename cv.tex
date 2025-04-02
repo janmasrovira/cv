@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
-\usepackage[margin=2.4cm]{geometry}
+\usepackage[margin=1cm]{geometry}
 \usepackage{url}
+\usepackage{fontawesome5}
 \usepackage[x11names]{xcolor}
 \usepackage{titlesec}
 \usepackage[inline]{enumitem}
@@ -21,20 +22,43 @@ An always up-to-date version of this CV can be found in the following link:
 \url{https://gitlab.com/janmasrovira/cv/-/jobs/artifacts/master/raw/cv.pdf?job=tex2pdf}
 \end{center}
 
-\section{Personal Data}
+\vspace{0.4cm}
 
-\begin{tabular}{rl}
-\textsc{Birth:} & 12th of January 1993 (Catalonia).\\
-\textsc{Citizenship:} & Spanish.\\
-\textsc{Phone:} & +34 634551201\\
-\textsc{Email:} & \href{mailto:janmasrovira@gmail.com}{janmasrovira@gmail.com} \\
-\textsc{Working time zone:} & Central European Time.  \\
-\textsc{Personal blog:} & \href{https://janmasrovira.gitlab.io/ascetic-slug/}{\texttt{janmasrovira.gitlab.io/ascetic-slug}} \\
-\textsc{Gitlab page:} & \href{https://gitlab.com/janmasrovira}{\texttt{gitlab.com/janmasrovira}} \\
-\textsc{Github page:} & \href{https://github.com/janmasrovira}{\texttt{github.com/janmasrovira}} \\
-\end{tabular}
+\begin{center}
+    \hfill
+    \faPhone\ +34 634551201
+    \hfill
+    \faEnvelope\ \href{mailto:janmasrovira@gmail.com}{janmasrovira@gmail.com}
+    \hfill
+    \faGlobe\ \href{https://janmasrovira.gitlab.io/ascetic-slug/}{\texttt{janmasrovira.gitlab.io/ascetic-slug}}
+    \hspace*{\fill}
+    \\
+    \vspace{0.1cm}
+    \hfill
+    \faGitlab\ \href{https://gitlab.com/janmasrovira}{\texttt{gitlab.com/janmasrovira}}
+    \hfill
+    \faGithub\ \href{https://github.com/janmasrovira}{\texttt{github.com/janmasrovira}}
+    \hspace*{\fill}
+\end{center}
+
+\section{Overview}
+
+I am a software developer with a Master's in Computer Science and a Master's in
+Mathematical Logic. My focus areas include compilers, functional programming,
+and more generally the intersection of mathematics and computer science.
+
+Currently, I am working on the Juvix compiler at Heliax. Juvix is a pure,
+strongly typed, functional programming language with a focus on safety. The Juvix compiler is implemented in Haskell.
+Previously, I worked as a Proof Engineer at Formal Vindications, where I applied
+formal verification and logical reasoning to formally verify software.
 
 \section{Professional History}
+\begin{tabular}{@{}p{3cm} p{6cm} r@{}}
+    \textit{YYYY – YYYY} & \textbf{Proof Engineer} & Formal Vindications \\
+    \textit{YYYY – Present} & \textbf{Compiler Engineer} & Heliax (Juvix Team) \\
+\end{tabular}
+
+\subsection*{(2021 - current) Heliax - Compiler Engineer}
 \vspace{0.2cm}
 \begin{tabular}{r|p{11cm}}
   \textsc{current} & \textsc{Compiler engineer and language designer} \\
