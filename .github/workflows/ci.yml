@@ -22,18 +22,14 @@ jobs:
           options: -v ${{ github.workspace }}:/workspace -w /workspace
           run: |
             latexmk -pdf cv
+            mkdir public
+            mv cv.pdf public/
 
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: cv
-          path: cv.pdf
-
-      - name: Upload PDF to pages
+      - name: Upload pdf artifact
         id: upload-pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
+          path: public
 
   deploy:
     needs: build
