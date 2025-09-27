@@ -1,9 +1,9 @@
-name: Build latex to PDF
+name: Build Typst to PDF
 
 on:
   push:
     paths:
-      - cv.tex
+      - '**.typ'
       - .github/workflows/ci.yml
   workflow_dispatch:
 
@@ -15,13 +15,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Compile LaTeX to PDF
+      - name: Compile Typst to PDF
         uses: addnab/docker-run-action@v3
         with:
-          image: janmasrovira/texlive:2025-custom
+          image: 123marvin123/typst:0.13.1
           options: -v ${{ github.workspace }}:/workspace -w /workspace
           run: |
-            latexmk -pdf cv
+            typst compile cv.typ
             mkdir public
             mv cv.pdf public/
 
