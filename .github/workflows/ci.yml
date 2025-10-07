@@ -3,7 +3,7 @@ name: Build latex to PDF
 on:
   push:
     paths:
-      - '**.latex'
+      - cv.tex
       - .github/workflows/ci.yml
   workflow_dispatch:
 
