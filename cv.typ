@@ -37,27 +37,21 @@ The Juvix compiler is implemented in Haskell. Previously, I worked as a Proof
 Engineer at Formal Vindications, where I applied formal verification and logical
 reasoning to formally verify software.
 
-I write about things I find interesting in my blog:
-janmasrovira.gitlab.io/ascetic-slug
-
 == Professional History
 === [2021 - current] Heliax - Compiler Engineer, Language Designer
 
-I’ve worked on designing the Juvix language and implementing its compiler in Haskell. The source code is publicly
-available at github.com/anoma/juvix.
-
-I’d like to highlight some of my contributions to the compiler:
-
-- *Type checker*. I’ve implemented a type checker that supports user defined ADTs, polymorphism, type inference and implicit arguments, among other features.
-- *Termination checker*. I’ve implemented a termination checker based on structural recursion. It detects decreasing lexicographic order of arguments.
-- *Intermediate languages*. I’ve implemented transformations involving intermediate languages. E.g. lambda lifting.
-- *Parallelization of the pipeline*. I’ve parallelized the pipeline so that modules that don’t depend on each other can be compiled in parallel.
-- *Parser*. I’ve implemented a parser using parser combinators. It keeps track of source location and supports custom infix operators. The complexity of the Juvix language is comparable to Haskell.
-- *Advanced Haskell types*. I strive to write elegant code that’s safe and easy to maitain. I’ve successfully used advanced types in Haskell such as type families, GADT’s, effects, singletons, etc. to improve the overall quality of the codebase.
+Core contributor to the Juvix language and its Haskell compiler
+(github.com/anoma/juvix), where I built the type checker (ADTs, polymorphism,
+inference, implicit arguments), a termination checker based on structural
+recursion with lexicographic decreases, and intermediate-language transforms
+such as lambda lifting; I also parallelised compilation of independent modules
+and wrote a parser with parser-combinators, precise source locations, and custom
+infix operators. Throughout, I leveraged advanced Haskell types—type families,
+GADTs, singletons, and effect systems—to improve safety and maintainability.
 
 === [2020 - 2021] Formal Vindications - Formal Methods Engineer
 
-The aim of the company was to formally verify tachograph software. As part of
+The aim of the company is to formally verify tachograph software. As part of
 that effort, I contributed to formally verifying a fully UTC compliant (with
 leap seconds) library in Rocq. The code is not publicly available.
 
@@ -83,10 +77,15 @@ Special mention of *Best Student Award* #footnote[
   Awarded based on grades and quality of homework/projects; included a 1000€ bonus.
 ]
 
+For my #link("https://github.com/janmasrovira/interpretability-logics")[master’s thesis], I formalised several theorems in Agda concerning
+interpretability logic, a class of modal logics. These efforts lead to a #link("https://rinekeverbrugge.nl/wp-content/uploads/2024/09/FinalShortPaperMain-AiML2020.pdf")[short paper publication] at Advanced in Modal Logic 2020.
+
 === [July 2018] Master in Innovation and Research in Informatics (120 ECTS)
 *Main (60 ECTS)*: _Polytechnic University of Catalonia_
 
 *Abroad (60 ECTS)*: Master in Algorithms, Languages and Logic, _Chalmers University of Technology, Sweden_
+
+For my master's thesis I designed and implemented an automated prover for inductive reasoning over small Haskell programs
 
 === [July 2015] Bachelor's Degree in Informatics Engineering (240 ECTS)
 _Polytechnic University of Catalonia_
