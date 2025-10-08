@@ -74,7 +74,7 @@ backed databases and overall knowledge of the Android system.
 _University of Barcelona_
 
 Special mention of *Best Student Award* #footnote[
-  Awarded based on grades and quality of homework/projects; included a 1000€ bonus.
+    Granted for academic performance and project excellence; €1,000 award.
 ]
 
 For my #link("https://github.com/janmasrovira/interpretability-logics")[master’s thesis], I formalised several theorems in Agda concerning
@@ -83,7 +83,7 @@ interpretability logic, a class of modal logics. These efforts lead to a #link("
 === [July 2018] Master in Innovation and Research in Informatics (120 ECTS)
 *Main (60 ECTS)*: _Polytechnic University of Catalonia_
 
-*Abroad (60 ECTS)*: Master in Algorithms, Languages and Logic, _Chalmers University of Technology, Sweden_
+*Abroad (60 ECTS)*: Master in Algorithms, Languages and Logic, _Chalmers University of Technology_
 
 For my master's thesis I designed and implemented an automated prover for inductive reasoning over small Haskell programs
 

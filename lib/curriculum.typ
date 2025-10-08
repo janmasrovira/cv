@@ -1,4 +1,5 @@
 #import "@preview/scienceicons:0.1.0": orcid-icon
+#import "@preview/octique:0.1.0": *
 
 #let resume(
   author: "",
@@ -18,7 +19,6 @@
   lang: "en",
   body,
 ) = {
-
   // Sets document metadata
   set document(author: author, title: author)
 
@@ -28,12 +28,12 @@
     size: font-size,
     lang: lang,
     // Disable ligatures so ATS systems do not get confused when parsing fonts.
-    ligatures: false
+    ligatures: false,
   )
 
   // Reccomended to have 0.5in margin on all sides
   set page(
-    margin: (1.5cm),
+    margin: 1.3cm,
     paper: paper,
   )
 
@@ -65,13 +65,16 @@
   // Level 1 Heading
   [= #(author)]
 
-  // Personal Info Helper
-  let contact-item(value, prefix: "", link-type: "") = {
+  let contact-item(value, prefix: "", link-type: "", logo: "") = {
     if value != "" {
+      let body = [
+        #if logo != "" { [#logo ] }
+        #prefix#value
+      ]
       if link-type != "" {
-        link(link-type + value)[#(prefix + value)]
+        link(link-type + value)[#body]
       } else {
-        value
+        body
       }
     }
   }
@@ -83,12 +86,32 @@
       #{
         let items = (
           contact-item(phone),
-          contact-item(location),
-          contact-item(email, link-type: "mailto:"),
-          contact-item(github, link-type: "https://"),
-          contact-item(linkedin, link-type: "https://"),
-          contact-item(personal-site, link-type: "https://"),
-          contact-item(orcid, prefix: [#orcid-icon(color: rgb("#AECD54"))orcid.org/], link-type: "https://orcid.org/"),
+          contact-item(location, logo: octique-inline("location")),
+          contact-item(
+            email,
+            link-type: "mailto:",
+            logo: octique-inline("mail"),
+          ),
+          contact-item(
+            github,
+            link-type: "https://",
+            logo: octique-inline("mark-github"),
+          ),
+          contact-item(
+            linkedin,
+            link-type: "https://",
+            logo: octique-inline("link"),
+          ),
+          contact-item(
+            personal-site,
+            link-type: "https://",
+            logo: octique-inline("globe"),
+          ),
+          contact-item(
+            orcid,
+            prefix: [#orcid-icon(color: rgb("#AECD54"))orcid.org/],
+            link-type: "https://orcid.org/",
+          ),
         )
         items.filter(x => x != none).join("  |  ")
       }
