@@ -82,7 +82,7 @@ backed databases and overall knowledge of the Android system.
 _University of Barcelona_
 
 Special mention of *Best Student Award* #footnote[
-    Granted for academic performance and project excellence; €1,000 award.
+  Granted for academic performance and project excellence; €1,000 award.
 ]
 
 For my #link("https://github.com/janmasrovira/interpretability-logics")[master’s thesis], I formalised several theorems in Agda concerning
