@@ -1,6 +1,5 @@
 #import "lib/lib.typ": *
 
-// Put your personal information here, replacing mine
 #let name = "Jan Mas Rovira"
 #let location = "Barcelona, Spain"
 #let email = "janmasrovira@gmail.com"
@@ -11,9 +10,6 @@
 
 #show: resume.with(
   author: name,
-  // All the lines below are optional.
-  // For example, if you want to to hide your phone number:
-  // feel free to comment those lines out and they will not show.
   location: location,
   email: email,
   github: github,
