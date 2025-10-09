@@ -31,6 +31,15 @@ jobs:
         with:
           path: public
 
+  check:
+    runs-on: ubuntu-latest
+    container:
+      image: janmasrovira/typstyle:0.13.17
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check formatting
+        run: typstyle --check .
+
   deploy:
     needs: build
     if: github.ref == 'refs/heads/main'
