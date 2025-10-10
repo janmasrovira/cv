@@ -34,7 +34,7 @@ full-stack Android developer for a nationwide sales app.
 
 == Professional History
 
-=== [2021 - current] Heliax - Compiler Engineer, Language Designer - Lean
+=== [2025 May - current] Heliax - Compiler Engineer, Language Designer - Lean
 
 Co-designed and implemented, in Lean, an object-oriented layer for a core
 component of the Anoma protocol - the so-called Anoma Resource Machine. The work
@@ -42,7 +42,7 @@ involves implementing compilation steps in Lean and writing formal proofs. The
 source code is publicly available at
 #link("https://github.com/anoma/goose-lean")[github.com/anoma/goose-lean].
 
-=== [2021 - current] Heliax - Compiler Engineer, Language Designer - Haskell
+=== [2021 - 2025 May] Heliax - Compiler Engineer, Language Designer - Haskell
 
 Core contributor to the Juvix language and its Haskell compiler
 (github.com/anoma/juvix), where I built the type checker (ADTs, polymorphism,
