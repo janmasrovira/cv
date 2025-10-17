@@ -39,19 +39,20 @@ full-stack Android developer for a nationwide sales app.
 Co-designed and implemented, in Lean, an object-oriented layer for a core
 component of the Anoma protocol - the so-called Anoma Resource Machine. The work
 involves implementing compilation steps in Lean and writing formal proofs. The
-source code is publicly available at
+source code is available at
 #link("https://github.com/anoma/goose-lean")[github.com/anoma/goose-lean].
 
 === [2021 - 2025 May] Heliax - Compiler Engineer, Language Designer - Haskell
 
-Core contributor to the Juvix language and its Haskell compiler
-(github.com/anoma/juvix), where I built the type checker (ADTs, polymorphism,
-inference, implicit arguments), a termination checker based on structural
-recursion with lexicographic decreases, and intermediate-language transforms
-such as lambda lifting; I also parallelised compilation of independent modules
-and wrote a parser with parser-combinators, precise source locations, and custom
-infix operators. Throughout, I leveraged advanced Haskell types—type families,
-GADTs, singletons, and effect systems—to improve safety and maintainability.
+Core contributor to the Juvix language and its Haskell compiler, where I built
+the type checker (ADTs, polymorphism, inference, implicit arguments), a
+termination checker based on structural recursion with lexicographic decreases,
+and intermediate-language transforms such as lambda lifting; I also parallelised
+compilation of independent modules and wrote a parser with parser-combinators,
+precise source locations, and custom infix operators. Throughout, I leveraged
+advanced Haskell types—type families, GADTs, singletons, and effect systems—to
+improve safety and maintainability. The source code is available at
+#link("https://github.com/anoma/juvix")[github.com/anoma/juvix].
 
 === [2020 - 2021] Formal Vindications - Formal Methods Engineer - Rocq, Ocaml
 
