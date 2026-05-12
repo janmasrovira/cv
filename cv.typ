@@ -6,7 +6,7 @@
 #let github = "github.com/janmasrovira"
 #let linkedin = "linkedin.com/in/jan-mas-rovira"
 #let phone = ""
-#let personal-site = "janmasrovira.github.io/ascetic-slug"
+#let personal-site = "blog.janmasrovira.org"
 
 #show: resume.with(
   author: name,
@@ -27,14 +27,21 @@ I am a software developer with a Master’s in Computer Science and a
 Master’s in Mathematical Logic. My focus areas include compilers, functional
 programming, and proof assistants.
 
-Since 2021 I’ve been a compiler engineer and language designer at Heliax,
-working in Lean and Haskell. Previously (2020–2021) I did formal verification in
-Rocq/OCaml at Formal Vindications. Earlier (2014–2019) I was a part-time
-full-stack Android developer for a nationwide sales app.
+Since 2026 I've been a compiler engineer at BLP, working in F\# on a typed
+DSL with code-generation backends. From 2021 to 2025 I was a compiler
+engineer and language designer at Heliax, working in Lean and Haskell.
+Previously (2020–2021) I did formal verification in Rocq/OCaml at Formal
+Vindications. Earlier (2014–2019) I was a part-time full-stack Android
+developer for a nationwide sales app.
 
 == Professional History
 
-=== [2025 May - current] Heliax - Compiler Engineer, Language Designer - Lean
+=== [2026 April - Current] BLP - Compiler Engineer, Language Designer - F\#
+
+Designing and implementing a typed DSL used to specify data models and APIs from
+which production code is generated.
+
+=== [2025 May - 2025 December] Heliax - Compiler Engineer, Language Designer - Lean
 
 Co-designed and implemented, in Lean, an object-oriented layer for a core
 component of the Anoma protocol - the so-called Anoma Resource Machine. The work
